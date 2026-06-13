@@ -2,6 +2,10 @@ public class ArrayI {
 
     public static void main(String[] args) {
         linearSearch();
+        binarySearch();
+        reverseArray();
+        pairsInAnArray();
+        printSubarrays();
     }
 
     public static void linearSearch() {
