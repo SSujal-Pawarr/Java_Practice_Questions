@@ -7,6 +7,7 @@ public class ArrayI {
         reverseArray();
         pairsInAnArray();
         printSubarrays();
+        maxSubArraySumI();
     }
 
     public static void linearSearch() {
@@ -105,7 +106,7 @@ public class ArrayI {
         }
     }
 
-    public static void maxSubArraySum(){
+    public static void maxSubArraySumI(){
         int arr[]={1,2,3,4,5};
         int currSum=0;
         int maxSum=Integer.Min_Value;
