@@ -194,5 +194,14 @@ public class ArrayI {
             rightMax[i]=Math.max(rightMax[i+1],height[i]);
         }
 
+        int trappedWater=0;
+        for(int i=0;i<n;i++){
+            int waterLevel=Math.min(leftMax[i],rightMax[i]);
+
+            trappedWater+=waterLevel-height[i];
+        }
+
+        System.out.println(trappedWater);
+
     }
 }
