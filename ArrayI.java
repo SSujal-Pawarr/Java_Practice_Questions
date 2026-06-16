@@ -175,4 +175,17 @@ public class ArrayI {
         Sytem.out.println(maxProfit);
 
     }
+
+    public static void trappedRainWater(){
+        int height[]={4,2,0,6,3,2,5};
+        int n=height.length;
+
+        int leftMax[]=new int[n];
+        leftMax[i]=height[i];
+
+        for(int i=1;i<n;i++){
+            leftMax[i]=Math.max(leftMax[i-1],height[i]);
+        }
+        
+    }
 }
