@@ -29,7 +29,7 @@ public class ArrayI {
     }
 
     public static void largestNumber(){
-        int arr[]={1,2,3,4,5}
+        int arr[]={1,2,3,4,5};
         int max=Integer.Min_Value;
 
         for(int i=0;i< arr.length;i++){
@@ -47,12 +47,12 @@ public class ArrayI {
             int mid=(start+end)/2;
             if(arr[mid]==key){
                 System.out.println(key+" Found");
-                found=true
+                found=true;
                 break;
             }else if (arr[mid]<key){
                 start=mid+1;
             }else{
-                end=mid-1
+                end=mid-1;
             }
         }
          if(!found){
@@ -73,7 +73,7 @@ public class ArrayI {
             left++;
             right--;
         }
-        System.out.println("Reversed Array:")
+        System.out.println("Reversed Array:");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
@@ -172,36 +172,7 @@ public class ArrayI {
                 buyPrice=prices[i];
             }
         }
-        Sytem.out.println(maxProfit);
-
-    }
-
-    public static void trappedRainWater(){
-        int height[]={4,2,0,6,3,2,5};
-        int n=height.length;
-
-        int leftMax[]=new int[n];
-        leftMax[0]=height[0];
-
-        for(int i=1;i<n;i++){
-            leftMax[i]=Math.max(leftMax[i-1],height[i]);
-        }
-
-        int rightMax[]=new int[n];
-        rightMax[n-1]=height[n-1];
-
-        for(int i=n-2;i>=0;i--){
-            rightMax[i]=Math.max(rightMax[i+1],height[i]);
-        }
-
-        int trappedWater=0;
-        for(int i=0;i<n;i++){
-            int waterLevel=Math.min(leftMax[i],rightMax[i]);
-
-            trappedWater+=waterLevel-height[i];
-        }
-
-        System.out.println(trappedWater);
+        System.out.println(maxProfit);
 
     }
 }
