@@ -204,6 +204,5 @@ public class ArrayI {
         System.out.println(trappedWater);
 
     }
-
     
 }
