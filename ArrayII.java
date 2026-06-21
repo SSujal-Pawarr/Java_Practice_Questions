@@ -1,7 +1,11 @@
 public class ArrayII{
 
     public static void main(String []args){
-
+           maxSubArraySumI();
+           maxSubArraySumII();
+           kadanesAgorithm();
+           trappedRainWater();
+           buyAndSellStocks();
     }
 
     public static void maxSubArraySumI(){
@@ -57,7 +61,7 @@ public class ArrayII{
     }
 
 
-        public static void kadanesAgorithm(){
+    public static void kadanesAgorithm(){
         int arr[]={1,-1,5,4,7};
         int cs=0;
         int ms=Integer.MIN_VALUE;
@@ -100,7 +104,7 @@ public class ArrayII{
 
     }
 
-        public static void buyAndSellStocks(){
+    public static void buyAndSellStocks(){
         int prices[]={7,1,5,3,6,4};
         int buyPrice=Integer.MAX_VALUE;
         int maxProfit=0;
