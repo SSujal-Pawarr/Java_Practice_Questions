@@ -4,7 +4,7 @@ public class ArrayII{
 
     }
 
-        public static void maxSubArraySumI(){
+    public static void maxSubArraySumI(){
         int arr[]={1,2,3,4,5};
         int currSum=0;
         int maxSum=Integer.Min_Value;
@@ -24,4 +24,6 @@ public class ArrayII{
         }
 
     }
+
+    
 }
