@@ -7,7 +7,7 @@ public class ArrayII{
     public static void maxSubArraySumI(){
         int arr[]={1,2,3,4,5};
         int currSum=0;
-        int maxSum=Integer.Min_Value;
+        int maxSum=Integer.MIN_VALUE;
 
            for(int i=0;i<arr.length;i++){
             int start=i;
@@ -60,12 +60,12 @@ public class ArrayII{
         int prices[]={7,1,5,3,6,4};
         int buyPrice=Integer.MAX_VALUE;
         int profit=0;
-
+int maxProfit=0;
         for(int i=0;i<prices.length;i++){
             if(buyPrice<prices[i]){
                 //profit
-                int profit=prices[i]-buyPrice;
-                maxProfit=MAth.max(maxProfit,profit);
+                 profit=prices[i]-buyPrice;
+                maxProfit=Math.max(maxProfit,profit);
             }else{
                 buyPrice=prices[i];
             }
