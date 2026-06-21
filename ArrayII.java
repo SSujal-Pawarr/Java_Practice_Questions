@@ -56,21 +56,19 @@ public class ArrayII{
      System.out.println(maxSum);
     }
 
-    public static void buyAndSellStocks(){
-        int prices[]={7,1,5,3,6,4};
-        int buyPrice=Integer.MAX_VALUE;
-        int maxProfit=0;
-        for(int i=0;i<prices.length;i++){
-            if(buyPrice<prices[i]){
-                //profit
-                int profit=prices[i]-buyPrice;
-                maxProfit=Math.max(maxProfit,profit);
-            }else{
-                buyPrice=prices[i];
-            }
-        }
-        System.out.println(maxProfit);
 
+        public static void kadanesAgorithm(){
+        int arr[]={1,-1,5,4,7};
+        int cs=0;
+        int ms=Integer.MIN_VALUE;
+        for(int i=0;i<prices.length;i++){
+           cs+=arr[i];
+           if(cs<0){
+            cs=0;
+           }
+           ms=math.max(ms,cs)
+        }
+        System.out.println(ms);
     }
 
     public static void trappedRainWater(){
@@ -102,15 +100,22 @@ public class ArrayII{
 
     }
 
-    public static void buyAndSellStocks(){
+        public static void buyAndSellStocks(){
         int prices[]={7,1,5,3,6,4};
-        it buyPrice=Integer.MAX_VALUE;
+        int buyPrice=Integer.MAX_VALUE;
         int maxProfit=0;
-
         for(int i=0;i<prices.length;i++){
             if(buyPrice<prices[i]){
-
+                //profit
+                int profit=prices[i]-buyPrice;
+                maxProfit=Math.max(maxProfit,profit);
+            }else{
+                buyPrice=prices[i];
             }
         }
+        System.out.println(maxProfit);
+
     }
+
+   
 }
