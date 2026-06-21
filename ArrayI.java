@@ -106,27 +106,6 @@ public class ArrayI {
         }
     }
 
-
-
-
-    public static void kadanesAlgorithm(){
-        int prices[]={7,1,5,3,6,4};
-        int buyPrice=Integer.MAX_VALUE;
-        int profit=0;
-
-        for(int i=0;i<prices.length;i++){
-            if(buyPrice<prices[i]){
-                //profit
-                int profit=prices[i]-buyPrice;
-                maxProfit=MAth.max(maxProfit,profit);
-            }else{
-                buyPrice=prices[i];
-            }
-        }
-        System.out.println(maxProfit);
-
-    }
-
     public static void trappedRainWater(){
         int height[]={4,2,0,6,3,2,5};
         int n=height.length;
