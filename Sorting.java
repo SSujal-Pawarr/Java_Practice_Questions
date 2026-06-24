@@ -1,7 +1,7 @@
 public class Sorting{
     public static void main(String []args){
         bubbleSort();
-        
+        selectionSort();
     }
     public static void bubbleSort(){
         int arr[]={5,1,3,6};
