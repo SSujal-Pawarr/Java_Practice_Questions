@@ -18,6 +18,7 @@ public class Sorting{
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i]+" ");
         }
+
     }
 
     public static void selectionSort(){
@@ -30,10 +31,16 @@ public class Sorting{
                     minPos=j;
                 }
             }
+            int temp=arr[minPos];
+            arr[minPos]=arr[i];
+            arr[i]=temp;
         }
-        
-        int temp=arr[minPos];
-        arr[minPos]=arr[i];
-        arr[i]=temp;
+        System.out.println();
+
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
     }
+        
+        
 }
